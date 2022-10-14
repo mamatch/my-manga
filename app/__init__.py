@@ -27,8 +27,7 @@ def create_app(config_name: str) -> Flask:
     moment.init_app(app)
 
     # TODO: Add routes and blueprints
-    @app.route("/")
-    def index():
-        return "it's ok"
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
 
     return app
