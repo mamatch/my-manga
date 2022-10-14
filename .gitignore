@@ -6,3 +6,7 @@ __pycache__
 
 # IDEs
 .idea
+
+# dev database
+data-dev.sqlite
+migrations
