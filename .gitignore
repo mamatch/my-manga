@@ -1,12 +1,12 @@
 # venvs
-venv
+venv/
 
 # caches
-__pycache__
+__pycache__/
 
 # IDEs
-.idea
+.idea/
 
 # dev database
 data-dev.sqlite
-migrations
+migrations/
