@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    {% for manga in mangas %}
+        {{ manga.__repr__() }}
+    {% endfor %}
+{% endblock %}
