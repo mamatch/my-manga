@@ -1,0 +1,8 @@
+# venvs
+venv
+
+# caches
+__pycache__
+
+# IDEs
+.idea
