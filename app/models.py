@@ -14,6 +14,9 @@ class Manga(db.Model):
     cover_image_path = db.Column(db.String(200))
     pages = db.relationship("Page", backref="manga", lazy=True)
 
+    def __repr__(self):
+        return f"<Manga {self.name} - {self.author} - {self.creation_date}>"
+
 
 class Page(db.Model):
     """
@@ -24,3 +27,6 @@ class Page(db.Model):
     number = db.Column(db.Integer)
     image_path = db.Column(db.String(200))
     manga_id = db.Column(db.Integer, db.ForeignKey("mangas.id"))
+
+    def __repr__(self):
+        return f"<Page {self.number}>"
